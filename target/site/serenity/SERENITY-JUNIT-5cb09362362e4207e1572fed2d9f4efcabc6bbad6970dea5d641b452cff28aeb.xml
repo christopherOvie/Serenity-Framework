@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="tests.AccountPageTest" skipped="0" tests="1" time="19.11" timestamp="2024-04-08 06:27:01"><testcase classname="tests.AccountPageTest" name="add a  new user and verify if the new user can login"/></testsuite>

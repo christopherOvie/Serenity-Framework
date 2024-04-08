@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="tests.LoginPageTests" skipped="0" tests="1" time="6.04" timestamp="2024-04-08 02:13:17"><testcase classname="tests.LoginPageTests" name="verify if a user can login successfully into the store with valid credential"/></testsuite>
