@@ -33,6 +33,15 @@ public class LoginPageTests {
 		System.out.println(greetingMessage);
 		assertEquals("Welcome test!", greetingMessage);
 		assertThat(greetingMessage).contains("Welcome");
+		
+		// Test case 1: Text contains "hello"
+//	    String text1 = "hello world";
+//	    String result1 = processor.processText(text1);
+//	    if (text1.contains("hello")) {
+//	        assertEquals("Contains greeting", result1);
+//	    } else {
+//	        assertEquals("Does not contain greeting", result1);
+//	    }
 
 	}
 
@@ -56,10 +65,27 @@ public class LoginPageTests {
 
 		shopper.doLogin("test", "testing");
 
+		
+		String expectedMessage= "Invalid username or password. Signon failed.";
 		String invalidMessage = shopper.getMessageOnInvalidLogin();
+		System.out.println(invalidMessage);
 		assertEquals("Invalid username or password. Signon failed.", invalidMessage);
 		assertThat(invalidMessage).contains("Invalid username or password.");
-		;
+		 if (expectedMessage.contains("hello")) {
+	            assertEquals("Signon failed", invalidMessage);
+	        } else {
+	            assertEquals("Does not contain Signon failed message", invalidMessage);
+	        }
+		
 	}
+	
+	// Test case 1: Text contains "hello"
+//    String text1 = "hello world";
+//    String result1 = processor.processText(text1);
+//    if (text1.contains("hello")) {
+//        assertEquals("Contains greeting", result1);
+//    } else {
+//        assertEquals("Does not contain greeting", result1);
+//    }
 
 }

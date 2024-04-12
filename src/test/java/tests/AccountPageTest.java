@@ -60,12 +60,18 @@ public class AccountPageTest {
 		//login again with same username and password used in creating account
 		
 	      shopper.doLogin(username, password);
-	     Thread.sleep(5000);
+	    
 	String greetingMessage=	shopper.getGreetingMessage();
 	assertEquals("Welcome " + firstname + "!", greetingMessage);
-	//assertEquals("Welcome " + firstname + "!",greetingMessage);
+	System.out.println(greetingMessage);
+
      assertThat(greetingMessage).contains("Welcome " + firstname + "!");
-		
+     
+     if(greetingMessage.contains("Welcome")) {
+    	 assertEquals("Welcome " + firstname + "!", greetingMessage);
+     }
+//		
+     
 		
 	}
 
